@@ -7,10 +7,9 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class SecondComponentComponent implements AfterViewInit {
   text = "SecondEvoApp";
-  private intervalId: any;
-
+  
   ngAfterViewInit(): void {
-      this.intervalId = setInterval(() => {
+      setInterval(() => {
       this.text = this.text === "SecondEvoApp" ? "second-component works!" : "SecondEvoApp";
     }, 2000);
   }
