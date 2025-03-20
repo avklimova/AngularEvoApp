@@ -1,0 +1,12 @@
+<h3>*ngFor Test</h3>
+<ul>
+  <li [id]="car.name" *ngFor="let car of array_cars">{{car.name}}</li>
+</ul>
+<br>
+<h3>Pipe Date</h3>
+<p>Original Date: {{date_now}}</p>
+<p>Pipe Date: {{date_now | date: 'dd.MM.yyyy'}}</p>
+<p>Pipe Time: {{date_now | date: 'HH:mm': 'Europe/Moscow'}}</p>
+<br>
+<h3>Current Number: {{current_number}}</h3>
+<h3>Plus 5 Pipe: {{current_number | plusPipe}}</h3>
