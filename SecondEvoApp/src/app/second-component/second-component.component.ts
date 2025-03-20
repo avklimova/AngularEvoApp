@@ -10,8 +10,7 @@ export class SecondComponentComponent implements AfterViewInit {
   private intervalId: any;
 
   ngAfterViewInit(): void {
-    // Устанавливаем интервал для изменения текста каждые 2 секунды
-    this.intervalId = setInterval(() => {
+      this.intervalId = setInterval(() => {
       this.text = this.text === "SecondEvoApp" ? "second-component works!" : "SecondEvoApp";
     }, 2000);
   }
